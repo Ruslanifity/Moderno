@@ -79,14 +79,14 @@
     &-title {
         margin-bottom: 10px;
         font-size: 48px;
-        font-family: "Roboto-Bold";
+        @include f700;
         line-height: 72px;
     }
 
     &-text {
         margin-bottom: 50px;
         font-size: 20px;
-        font-family: "Roboto-Medium";
+        @include f500;
         line-height: 30px;
     }
 
@@ -103,7 +103,7 @@
             border-radius: 4px;
             border: none;
             font-size: 14px;
-            font-family: "Roboto-Medium";
+            @include f500;;
             outline: none;
             padding: 0 60px 0 25px;
 
@@ -113,7 +113,7 @@
 
             &::placeholder {
                 color: #90a4ae;
-                font-family: "Roboto-Medium";
+                @include f500;
             }
         }
 
@@ -227,7 +227,7 @@
 
         span {
             font-size: 14px;
-            font-family: "Roboto-Medium";
+            @include f500;
         }
     }
 }
@@ -266,6 +266,9 @@
 
 .product-slider {
     padding: 110px 0 120px;
+    &__title{
+        text-align: center;
+    }
 
     .slick-dots {
         text-align: center;
@@ -295,3 +298,49 @@
         }
     }
 }
+
+.advantages {
+    background-color: $bg;
+    padding: 110px 0;
+}
+.advantages__title {
+    text-align: center;
+    color: #fff;
+}
+.advantages__inner {
+    display: flex;
+    justify-content: space-between;
+    
+}
+.advantages__item {
+    text-align: center;
+    max-width: 370px;
+    padding: 0px 15px;
+    &:hover{
+        .advantages__item-images{
+            background-color: $green;
+        }
+        .advantages__item-title{
+            color: $green;
+        }
+    }
+    &-images{
+        margin: 0 auto 30px;
+        width: 115px;
+        height: 115px;
+        border-radius: 50%;
+        background-color: #fff;
+        transition: all .3s;
+    }
+    &-title{
+        margin-bottom: 25px;
+        color: #fff;
+        @include f500;
+        font-size: 24px;
+        transition: all .3s;
+    }
+    &-text{
+        font-size: 15px;
+    }
+}
+
