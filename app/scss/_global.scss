@@ -1,31 +1,55 @@
-
-html{
+html {
     box-sizing: border-box;
 }
+
 *,
 *::before,
-*::after{
+*::after {
     box-sizing: inherit;
 }
-a{
+
+a {
     display: inline-block;
     text-decoration: none;
     color: $text;
 }
-ul, li{
+
+ul,
+li {
     margin: 0;
     padding: 0;
     list-style: none;
 }
-body{
+
+body {
     font-family: "Roboto-Regular";
     font-size: 15px;
     line-height: 24px;
     color: $text;
 }
 
-.container{
+.container {
     max-width: 1200px;
     padding: 0 15px;
     margin: 0 auto;
+}
+
+.container-fluid {
+    max-width: 100%;
+    padding: 0 30px;
+    margin: 0 auto;
+}
+
+.title{
+    color: $bg;
+    font-family: "Roboto-Bold";
+    font-size: 36px;
+    line-height: 60px;
+    margin-bottom: 30px;
+}
+
+@media (max-width: 720px) {
+    .container-fluid {
+        padding: 0 15px;
+    }
 }
