@@ -223,6 +223,7 @@
     &-author {
         display: flex;
         align-items: center;
+        max-width: 245px;
 
         span {
             font-size: 14px;
@@ -242,8 +243,6 @@
     margin-right: 14px;
 }
 
-.product__item-star {}
-
 .product__bottom-btn {
 
     text-align: center;
@@ -261,8 +260,38 @@
         &.mixitup-control-active {
             background-color: $red;
             color: #fff;
+        }
+    }
+}
+
+.product-slider {
+    padding: 110px 0 120px;
+
+    .slick-dots {
+        text-align: center;
+        margin-top: 50px;
+
+        li {
+            display: inline-block;
+            margin-left: 3px;
+            margin-right: 3px;
+            &.slick-active{
+                button{
+                    background-color: $green;
+                }
+            }
+            button {
+                border-radius: 50%;
+                font-size: 0;
+                border: 0;
+                padding: 0;
+                background-color: rgb(232, 232, 232);
+                width: 16px;
+                height: 16px;
+                cursor: pointer;
+                outline: none;
+            }
 
         }
     }
-
 }
