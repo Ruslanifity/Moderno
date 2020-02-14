@@ -103,7 +103,8 @@
             border-radius: 4px;
             border: none;
             font-size: 14px;
-            @include f500;;
+            @include f500;
+            ;
             outline: none;
             padding: 0 60px 0 25px;
 
@@ -266,7 +267,8 @@
 
 .product-slider {
     padding: 110px 0 120px;
-    &__title{
+
+    &__title {
         text-align: center;
     }
 
@@ -278,11 +280,13 @@
             display: inline-block;
             margin-left: 3px;
             margin-right: 3px;
-            &.slick-active{
-                button{
+
+            &.slick-active {
+                button {
                     background-color: $green;
                 }
             }
+
             button {
                 border-radius: 50%;
                 font-size: 0;
@@ -303,28 +307,34 @@
     background-color: $bg;
     padding: 110px 0;
 }
+
 .advantages__title {
     text-align: center;
     color: #fff;
 }
+
 .advantages__inner {
     display: flex;
     justify-content: space-between;
-    
+
 }
+
 .advantages__item {
     text-align: center;
     max-width: 370px;
     padding: 0px 15px;
-    &:hover{
-        .advantages__item-images{
+
+    &:hover {
+        .advantages__item-images {
             background-color: $green;
         }
-        .advantages__item-title{
+
+        .advantages__item-title {
             color: $green;
         }
     }
-    &-images{
+
+    &-images {
         margin: 0 auto 30px;
         width: 115px;
         height: 115px;
@@ -332,14 +342,16 @@
         background-color: #fff;
         transition: all .3s;
     }
-    &-title{
+
+    &-title {
         margin-bottom: 25px;
         color: #fff;
         @include f500;
         font-size: 24px;
         transition: all .3s;
     }
-    &-text{
+
+    &-text {
         font-size: 15px;
     }
 }
@@ -353,7 +365,7 @@
     background-position: center;
     background-size: cover;
 
-    &__box{
+    &__box {
         display: flex;
         justify-content: center;
         align-items: center;
@@ -362,17 +374,20 @@
         min-height: 215px;
         background-color: $green;
     }
-    &__title{
+
+    &__title {
         font-size: 30px;
         line-height: 30px;
         color: #fff;
         margin-right: 45px;
         max-width: 260px;
-        span{
+
+        span {
             @include f700;
         }
     }
-    &__link{
+
+    &__link {
         font-size: 18px;
         line-height: 36px;
         padding: 14px 40px;
@@ -380,3 +395,35 @@
     }
 }
 
+.tutorial {
+    padding: 70px 0px 120px;
+}
+
+.tutorial__title{
+    text-align: center;
+}
+.tutorial__inner {
+    display: flex;
+    justify-content: space-between;
+}
+
+.tutorial__item {
+    max-width: 370px;
+    width: 100%;
+
+    &-images {
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        min-height: 270px;
+    }
+
+    &-title {
+        background-color: #f8f8f8;
+        font-size: 24px;
+        text-align: center;
+        @include f700;
+        padding: 30px 10px;
+        color: $bg;
+    }
+}
