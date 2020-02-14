@@ -24,3 +24,64 @@
     font-weight: normal;
     font-style: normal;
 }
+
+
+@font-face {
+    font-family: "Raleway-Bold";
+  
+    src: url("../fonts/Raleway-Bold.woff") format("woff"), 
+      url("../fonts/Raleway-Bold.woff2") format("woff2"); 
+    font-weight: normal;
+    font-style: normal;
+  }
+
+
+@font-face {
+    font-family: 'icomoon';
+    src:  url('../fonts/icomoon.eot?uw7zor');
+    src:  url('../fonts/icomoon.eot?uw7zor#iefix') format('embedded-opentype'),
+      url('../fonts/icomoon.ttf?uw7zor') format('truetype'),
+      url('../fonts/icomoon.woff?uw7zor') format('woff'),
+      url('../fonts/icomoon.svg?uw7zor#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+  }
+  
+  [class^="icon-"], [class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icomoon' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+  
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  .icon-map-marker:before {
+    content: "\f041";
+  }
+  .icon-shopping-cart:before {
+    content: "\f07a";
+  }
+  .icon-phone:before {
+    content: "\f095";
+  }
+  .icon-bolt:before {
+    content: "\f0e7";
+  }
+  .icon-flash:before {
+    content: "\f0e7";
+  }
+  .icon-angle-right:before {
+    content: "\f105";
+  }
+  .icon-location-arrow:before {
+    content: "\f124";
+  }
+  

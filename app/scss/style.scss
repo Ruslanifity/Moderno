@@ -399,9 +399,10 @@
     padding: 70px 0px 120px;
 }
 
-.tutorial__title{
+.tutorial__title {
     text-align: center;
 }
+
 .tutorial__inner {
     display: flex;
     justify-content: space-between;
@@ -426,4 +427,171 @@
         padding: 30px 10px;
         color: $bg;
     }
+}
+
+.footer {
+    background-color: $bg;
+}
+
+.footer__content {}
+
+.footer__inner {
+    display: flex;
+    justify-content: space-between;
+    padding: 100px 0px 80px;
+}
+
+.footer__col {
+    max-width: 270px;
+    width: 100%;
+
+    &-title {
+        position: relative;
+        @include r700;
+        font-size: 22px;
+        color: #fff;
+        padding-bottom: 30px;
+        margin-bottom: 30px;
+
+        &::before {
+            content: "";
+            position: absolute;
+            background-color: $green;
+            bottom: 0;
+            left: 2px;
+            width: 51px;
+            height: 3px;
+        }
+    }
+
+    &-text {
+        color: #b7c3c8;
+        margin-bottom: 30px;
+    }
+}
+
+.footer__col-menu {
+    max-width: 220px;
+}
+
+.footer__info {
+    margin-top: 18px;
+    @include f500;
+    color: #fff;
+    padding-left: 30px;
+    position: relative;
+    &::before{
+        content: "\f041";
+        position: absolute;
+        font-family: "icomoon";
+        left: 0;
+        color: $green;
+        font-size: 18px;
+    }
+}
+.footer__info-phone{
+    &::before{
+        content: "\f095";
+    }
+}
+
+.footer__col-list {
+    a{
+        margin-bottom: 13px;
+        color: #b7c3c8;
+        padding-left: 22px;
+        position: relative;
+        &::before{
+            position: absolute;
+            content:"\f105";
+            font-size: 18px;
+            font-family: "icomoon";
+            left: 0;
+            color: $green;
+        }
+    }
+}
+
+.footer__social-link {
+    margin-bottom: 33px;
+    li{
+        display: inline-block;
+    }
+    a{
+        width: 27px;
+        height: 27px;
+        background-image: url(../images/footer/css_sprites.png);
+        & + a{
+            margin-left: 7px;
+        }
+    }
+}
+
+.link-face {
+    background-position: -0 -0;
+}
+.link-twit {
+    background-position: -28px -0;
+}
+.link-you {
+    background-position: -0 -28px;
+}
+.link-pint {
+    background-position: -28px -28px;
+}
+.link-linked {
+    background-position: -56px -0;
+}
+
+.footer__form {
+    position: relative;
+    input{
+        border: none;
+        background-color: #2f3c43;
+        display: block;
+        width: 100%;
+        height: 40px;
+        color: #fff;
+        font-size: 14px;
+        padding: 0 50px 0 13px;
+        &::placeholder{
+            font-size: 14px; 
+        }
+    }
+    button{
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        background-color: $green;
+        border: none;
+        height: 40px;
+        width: 43px;
+        cursor: pointer;
+        &::before{
+            content: "\f124";
+            position: absolute;
+            font-family: 'icomoon';
+            color: #fff;
+            font-size: 20px;
+            top: 11px;
+            left: 13px;
+        }
+    }
+}
+
+.footer__form-title {
+    margin-bottom: 15px;
+    color: #fff;
+    font-size: 20px;
+}
+
+.footer__copy {
+    border-top: 1px #424b53 solid;
+    padding: 25px 0px 25px;
+}
+
+.footer__copy-text {
+    text-align: center;
+    font-size: 15px;
+    color: #919699;
 }
