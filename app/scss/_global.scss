@@ -11,7 +11,17 @@ html {
 html,
 body {
     height: 100%;
+    
 }
+body {
+    @include f400;
+    font-size: 15px;
+    line-height: 24px;
+    color: $text;
+    overflow-x: hidden;
+    width: 100vw;
+}
+
 
 a {
     display: inline-block;
@@ -41,12 +51,7 @@ li {
     flex: 0 0 auto;
 }
 
-body {
-    @include f400;
-    font-size: 15px;
-    line-height: 24px;
-    color: $text;
-}
+
 .page__content{
     background-color: $gray;
 }

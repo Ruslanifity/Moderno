@@ -53,6 +53,7 @@
 }
 
 .bascket {
+    margin-right: 20px;
     span {
         background-color: $green;
     }
@@ -61,10 +62,8 @@
 .header__btn-login--off {
     display: none;
 }
-
 .header__btn-logout {
     display: none;
-
     &.header__btn-login--on {
         display: block;
     }
@@ -81,7 +80,6 @@
     &:hover {
 
     .user__menu{
-        // .bascket__menu {
             height: auto;
             border-width: 1px;
             padding: 20px;
@@ -91,7 +89,6 @@
 }
 
 .user {
-    margin-left: 20px;
     margin-right: 25px;
     padding-right: 20px;
     position: relative;
@@ -186,6 +183,7 @@
     border: 1px solid #e0e0e0;
     height: 0;
     overflow: hidden;
+    z-index: 1;
 }
 .circle__item{
     padding: 0 23px;
