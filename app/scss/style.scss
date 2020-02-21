@@ -2,6 +2,7 @@
 @import 'global';
 @import 'fonts';
 @import 'notification';
+@import 'product_one';
 
 
 .header__top-inner {
@@ -1029,6 +1030,7 @@ button.icon-unsorted {
         }
     }
 }
+
 .header__btn-menu{
     display: none;
 }
