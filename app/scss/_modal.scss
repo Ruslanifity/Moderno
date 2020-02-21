@@ -1,0 +1,92 @@
+#modal{
+    background-color: $green;
+    max-width: 730px;
+    width: 100%;
+    padding: 90px 0px 100px;
+}
+.login__title{
+    text-align: center;
+    font-size: 48px;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+    color: #fff;
+    @include f700;
+}
+.login__wrapper{
+    form{
+        max-width: 400px;
+        margin: 0 auto;
+        label{
+            position: relative;
+            &::before{
+                position: absolute;
+                font-family: 'icomoon';
+                font-size: 14px;
+                color: #fff;
+                left: 18px;
+                top: 9px;
+                z-index: 1;
+            }
+        }
+        .login__label-name::before{
+            content: "\f007";
+        }
+        .login__label-pass::before{
+            content: "\f023";
+        }
+        input{
+            height: 43px;
+            margin-bottom: 8px;
+            border: none;
+            background-color: #76ae36;
+            color: #fff;
+            font-size: 14px;
+            padding-left: 40px;
+            display: block;
+            width: 100%;
+            &::placeholder{
+                color: #fff;
+                font-size: 14px;
+            }
+        }
+        button{
+            margin-top: 19px;
+            padding: 18px 0 16px;
+            background-color: #fff;
+            width: 140px;
+            text-transform: uppercase;
+            border: none;
+            text-align: center;
+            margin-right: 10px;
+            @include f700;
+            color: #000;
+            box-shadow: 0px 2px 2px 0px rgba(118, 174, 54, 0.75);
+        }
+    }
+}
+.creat__acc{
+    margin-top: 19px;
+    padding: 15px 0 12px 28px;
+    width: 246px;
+    background-color: #76ae36;
+    text-align: center;
+    position: relative;
+    font-size: 18px;
+    color: #fff;
+    &::before{
+        content: "\f044";
+        position: absolute;
+        font-family: 'icomoon';
+        top: 14px;
+        left: 35px;
+    }
+
+}
+.lost__pass{
+    display: block;
+    margin-top: 20px;
+    color: #fff;
+    font-size: 18px;
+    
+    
+}
