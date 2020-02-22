@@ -1,0 +1,65 @@
+.pge-404__wrapper{
+    border: 1px solid #dcdcdc;
+    background-color: #fff;
+    margin-bottom: 150px;
+
+}
+.pge-404__head{
+    color: #444;
+    font-size: 24px;
+    padding: 23px 27px;
+    @include f500;
+    border-bottom: 1px solid #dcdcdc;
+}
+.pge-404__inner{
+    text-align: center;
+    background-color: $green;
+    color: #fff;
+}
+.pge-404__404{
+    font-family: 'Open Sans';
+    font-weight: 800;
+    font-size: 300px;
+    padding-top: 70px;
+    line-height: 300px;
+    padding-bottom: 20px;
+    position: relative;
+    &::after{
+        content: '';
+        position: absolute;
+        background-image: url(../images/man-404.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        width: 157px;
+        height: 302px;
+        margin-left: 20px;
+    }
+}
+.pge-404__title{
+    margin-bottom: 30px;
+    font-family: 'Open Sans';
+    font-weight: 400;
+    font-size: 30px;
+    
+}
+.pge-404__text{
+    max-width: 530px;
+    font-family: 'Open Sans';
+    font-weight: 400;
+    font-size: 18px;
+    margin: 0 auto;
+    margin-bottom: 60px;
+}
+.pge-404__link{
+    color: #fff;
+    font-size: 14px;
+    font-family: 'Open Sans';
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 20px 30px 16px;
+    text-align: center;
+    border: 2px solid #fff;
+    border-radius: 3px;
+    margin-bottom: 100px;
+}
