@@ -1,0 +1,16 @@
+.about__inner{
+    padding: 0px 50px;
+
+}
+.about__box{
+    h3{
+        font-size: 20px;
+        @include f700;
+        color: #444;
+        margin-top: 40px;
+        margin-bottom: 15px;
+    }
+    p{
+        margin-bottom: 40px;
+    }
+}
