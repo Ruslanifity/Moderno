@@ -1,45 +1,51 @@
-.upload__inner{
-    background-color: #fff;
-    border: 1px solid #d7d7d7;
+.withdrawals__inner{
+    display: flex;
+    justify-content: space-between;
     margin-bottom: 110px;
+}
+.withdrawals__col{
+    max-width: 570px;
+    width: 100%;
+    background-color: #fff;
+    border: 1px solid #dedede;
+    height: 100%;
+
+}
+.withdrawals__title{
+    padding: 18px 32px 24px;
+    border-bottom: 1px solid #dedede;
+    margin-bottom: 30px;
+    color: $bg;
+    font-size: 24px;
+    @include f500;
+}
+.withdrawals__content{
+    padding-left: 35px;
+    padding-right: 40px;
     button{
+        margin-bottom: 50px;
         color: #fff;
         background-color: $green;
         border: none;
         padding: 15px 36px;
-        margin-left: 175px;
         cursor: pointer;
     }
 }
-.upload__inner-title{
-    padding: 16px 35px 18px;
-    font-size: 24px;
-    @include f500;
-    color: $bg;
-    border-bottom: 1px solid #d7d7d7;
-    margin-bottom: 40px;
-}
-.upload__inner-content{
-    margin-bottom: 30px;
-    padding-left: 45px;
-    padding-right: 50px;
-}
-.upload-line{
-    display: flex;
+.withdrawals__form-line{
     margin-bottom: 25px;
     label{
-        padding-top: 5px;
-        min-width: 175px;
-        padding-right: 15px;
-        color: #444;
+        display: block;
+        width: 100%;
+        font-size: 16px;
+        @include f500;
+        margin-bottom: 15px;
+        color: $bg;
         span{
             color: $green;
         }
-        
     }
-    select,
     input,
-    textarea{
+    select{
         width: 100%;
         height: 40px;
         display: block;
@@ -49,11 +55,6 @@
         &::placeholder{
             color: #707070;
         }
-    }
-    textarea{
-        resize: none;
-        height: 150px;
-        padding: 8px 18px;
     }
     .jq-selectbox{
         width: 100%;
@@ -125,5 +126,37 @@
         box-shadow: none;
         text-shadow: none;
         color: #444;
+    }
+}
+.withdrawals__content-items{
+    padding-bottom: 35px;
+    font-size: 13px;
+    color: #444;
+}
+.withdrawals__content-item{
+    display: flex;
+    height: 42px;
+    align-items: center;
+    &:nth-child(odd){
+        background-color: #f9f9f9;
+    }
+}
+.withdrawals__content-date {
+    width: 154px;
+    padding-left: 20px;
+    @include f500;
+}
+.withdrawals__content-email {
+    width: 180px;
+    @include f500;
+}
+.withdrawals__content-prise {
+    width: 70px;
+    @include f700;
+}
+.withdrawals__content-status {
+    width: 88px;
+    &.withdrawals__content-paid{
+        color: $green;
     }
 }
